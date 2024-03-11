@@ -4,13 +4,16 @@
     background-color: #f8f9fa;
     opacity: 0; /* Bắt đầu với trang trong suốt */
     transition: opacity 1s ease; /* Hiệu ứng chuyển động */
+    margin: 0;
 }
 body.loaded {
     opacity: 1; /* Hiển thị trang khi đã load xong */
   }
 .container
 {
-    margin: 100px;
+  min-width: 100%;
+  display: block;
+    padding: 0;
     background-color: white;  
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
@@ -19,7 +22,7 @@ body.loaded {
 }
 li
 {
-    margin-top: 20px;
+   padding-top: 1em;
 }
 section {
     padding: 40px 0;
@@ -41,7 +44,7 @@ section {
 /*----------------left------------*/
 .left
 {
-    padding: 10px;
+    padding: 5%;
     width: 30%;
     background-color: rgb(0 110 134);
     text-align: center;
@@ -52,20 +55,20 @@ section {
   }
 .avatar
 {
-    padding: 20px;
+    padding: 10%;
 }
 .avatar img
 {   
     vertical-align: middle;
-    width:90%;
+    width:100%;
     border-radius: 50%;
-    border: 5px solid #ffffff;
+    border: 0.2em solid #ffffff;
 }
 
 .icon1
 {
-    margin: 15px;
-    width: 10%;
+  padding: 7%;
+
 }
 
 .icon
@@ -73,21 +76,13 @@ section {
     width: 10%;
 }
 
-.info
-{
-    margin: 20px;
-    text-align: left;
-}
-/* .info li
-{
-    margin: 18px;
-} */
+
 
 .menu
 {
     text-align: left;
-    margin: 40px;
-    border-top: 3px black solid;
+    margin-top: 5%;
+    border-top: 0.2rem black solid;
 }
 
 /* .navbar li
@@ -127,12 +122,10 @@ section {
 
 .right-column {
   width: 70%;
-  padding: 30px;
-
 }
 .about {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /*---------------skill--------*/
@@ -204,7 +197,7 @@ body.loaded .progress-bar-wrap {
 }
 .imgpro
 {
-  margin-top: 50px;
+  padding-top: 10%;
   width: 100%;
 }
 
@@ -217,4 +210,5 @@ body.loaded .progress-bar-wrap {
     opacity: 1;
   }
 }
+
   
